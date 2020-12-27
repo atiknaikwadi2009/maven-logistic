@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="backPanel" fx:id="backGround" maxHeight="600.0" maxWidth="-Infinity" minHeight="513.0" minWidth="-Infinity" onMouseClicked="#clearMouse" prefHeight="556.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.sipovsven.GetIt.controller.SupplierOrderController">
+   <children>
+      <JFXButton id="submitButton" fx:id="addProductButton" buttonType="RAISED" layoutX="395.0" layoutY="493.0" onAction="#addProduct" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="Add" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+      </JFXButton>
+      <TextField fx:id="productSearchField" layoutX="40.0" layoutY="505.0" prefHeight="25.0" prefWidth="241.0" promptText="product" />
+      <TextField fx:id="quantityTxtField" layoutX="304.0" layoutY="505.0" prefHeight="25.0" prefWidth="62.0" promptText="Quantity" />
+      <TableView fx:id="orderView" prefHeight="475.0" prefWidth="581.0">
+        <columns>
+          <TableColumn fx:id="idView" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="productView" prefWidth="373.0" text="Product" />
+            <TableColumn fx:id="quantityView" prefWidth="133.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <JFXButton id="orderBtnCSS" fx:id="acceptOrderedProduct" buttonType="RAISED" layoutX="630.0" layoutY="331.0" onAction="#accept" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="Accepted" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+      </JFXButton>
+      <JFXButton id="deleteButton" fx:id="deleteButton" buttonType="RAISED" layoutX="630.0" layoutY="392.0" onAction="#delete" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="Delete" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

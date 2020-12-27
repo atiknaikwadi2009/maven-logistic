@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="backPanel" fx:id="backGround" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearMouse" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.sipovsven.GetIt.controller.SupplierController">
+   <children>
+      <Region id="Slider" prefHeight="71.0" prefWidth="1200.0" />
+      <Text fill="#128fe2" layoutX="900.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <TableView fx:id="supplierView" editable="true" layoutX="-1.0" layoutY="68.0" prefHeight="700.0" prefWidth="692.0" style="-fx-background-color: #dbf3ff;">
+        <columns>
+          <TableColumn fx:id="supplierIdView" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="ID" />
+          <TableColumn fx:id="supplierNameView" maxWidth="200.0" minWidth="120.0" prefWidth="200.0" text="Supplier" />
+            <TableColumn fx:id="supplierAddressView" maxWidth="100.0" minWidth="170.0" prefWidth="100.0" text="Address" />
+            <TableColumn fx:id="supplierMailView" maxWidth="80.0" minWidth="170.0" prefWidth="202.0" text="E-Mail" />
+            <TableColumn fx:id="supplierPhoneView" maxWidth="100.0" minWidth="170.0" prefWidth="0.0" text="Phone" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ImageView id="imgLogo" fx:id="imgLogo" fitHeight="113.0" fitWidth="113.0" layoutX="14.0" layoutY="-20.0">
+         <image>
+            <Image url="@../images/GetItLogo_Orange.png" />
+         </image>
+      </ImageView>
+      <JFXButton id="submitButton" fx:id="submitCustomerButton" buttonType="RAISED" layoutX="898.0" layoutY="710.0" onAction="#submitSupplier" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="Submit" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+      </JFXButton>
+      <JFXButton id="deleteButton" fx:id="deleteSupplierButton" buttonType="RAISED" layoutX="1003.0" layoutY="710.0" onAction="#deleteSupplier" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="Delete" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+      </JFXButton>
+      <Text fill="#128fe2" layoutX="899.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#128fe2" layoutX="900.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#128fe2" layoutX="900.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="supplierNameTxtField" layoutX="898.0" layoutY="152.0" />
+      <TextField fx:id="supplierAddressTxtField" layoutX="898.0" layoutY="224.0" />
+      <TextField fx:id="supplierEmailTxtField" layoutX="899.0" layoutY="295.0" />
+      <TextField fx:id="supplierPhoneTxtField" layoutX="899.0" layoutY="367.0" />
+      <JFXButton id="orderBtnCSS" fx:id="createOrderButton" buttonType="RAISED" layoutX="718.0" layoutY="710.0" onAction="#openSupplierOrder" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="Order" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+      </JFXButton>
+      <TextField fx:id="supplierNotesTxtField" layoutX="898.0" layoutY="436.0" prefHeight="147.0" prefWidth="191.0" />
+      <Text fill="#128fe2" layoutX="900.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

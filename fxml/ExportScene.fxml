@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="backPanel" fx:id="backGround" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearMouse" prefHeight="600.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.sipovsven.GetIt.controller.ExportController">
+   <children>
+      <Region id="Slider" layoutY="1.0" prefHeight="71.0" prefWidth="1200.0" />
+      <ImageView id="imgLogo" fx:id="imgLogo" fitHeight="113.0" fitWidth="113.0" layoutX="14.0" layoutY="-20.0">
+         <image>
+            <Image url="@../images/GetItLogo_Orange.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="155.0" layoutY="139.0" prefHeight="104.0" prefWidth="190.0" text="Customer" textFill="#4aaee4">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <JFXButton id="submitButton" fx:id="custImportButton" buttonType="RAISED" layoutX="138.0" layoutY="459.0" onAction="#importCustomer" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="import" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="orderBtnCSS" fx:id="custExportButton" buttonType="RAISED" layoutX="249.0" layoutY="459.0" onAction="#exportCustomer" prefHeight="50.0" prefWidth="89.0" ripplerFill="#4bab83" text="export" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="568.0" layoutY="139.0" prefHeight="104.0" prefWidth="169.0" text="Products" textFill="#4aaee4">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <JFXButton id="submitButton" fx:id="importProductButton" buttonType="RAISED" layoutX="553.0" layoutY="459.0" onAction="#importProduct" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="import" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="orderBtnCSS" fx:id="exportProductButton" buttonType="RAISED" layoutX="664.0" layoutY="459.0" onAction="#exportProduct" prefHeight="50.0" prefWidth="89.0" ripplerFill="#4bab83" text="export" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="159.0" fitWidth="189.0" layoutX="158.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/customer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="159.0" fitWidth="189.0" layoutX="573.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/package.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

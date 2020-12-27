@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="backGround" fx:id="backGround" maxHeight="-Infinity" maxWidth="1920.0" minHeight="-Infinity" minWidth="1600.0" onMouseClicked="#clearMouse" prefHeight="1000.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.sipovsven.GetIt.controller.MainController">
+   <children>
+      <Region id="Slider" layoutY="-1.0" prefHeight="71.0" prefWidth="1600.0" />
+      <MenuButton id="menuButton" fx:id="orderMenu" alignment="CENTER" layoutX="672.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="251.0" text="Orders" textFill="WHITE">
+         <items>
+            <MenuItem fx:id="orderButton" mnemonicParsing="false" onAction="#openOrders" text="                            Orders                                " />
+            <MenuItem fx:id="myOrderButton" mnemonicParsing="false" onAction="#openMyOrders" text="                           My Orders" />
+            <MenuItem fx:id="supplierMenu" mnemonicParsing="false" onAction="#openSuppliers" text="                            Supplier        " />
+         </items>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </MenuButton>
+      <ImageView id="imgLogo" fx:id="imgLogo" fitHeight="113.0" fitWidth="113.0" layoutX="14.0" layoutY="-22.0">
+         <image>
+            <Image url="@../images/GetItLogo_Orange.png" />
+         </image>
+      </ImageView>
+      <JFXButton id="JFXMenuButton" fx:id="customerButton" layoutX="422.0" layoutY="-2.0" maxHeight="71.0" maxWidth="251.0" minHeight="71.0" minWidth="251.0" onAction="#openCustomers" prefHeight="71.0" prefWidth="251.0" ripplerFill="WHITE" text="Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="JFXMenuButton" fx:id="exportButton" layoutX="921.0" layoutY="-3.0" maxHeight="71.0" maxWidth="251.0" minHeight="71.0" minWidth="251.0" onAction="#openExportScene" prefHeight="71.0" prefWidth="251.0" ripplerFill="WHITE" text="import/export" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="JFXMenuButton" fx:id="inventoryButton" layoutX="159.0" layoutY="-1.0" maxHeight="71.0" maxWidth="251.0" minHeight="71.0" minWidth="251.0" onAction="#openInventory" prefHeight="71.0" prefWidth="251.0" ripplerFill="WHITE" text="Inventory" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="cssButton" layoutX="1428.0" layoutY="-1.0" onAction="#buttonPressed" prefHeight="71.0" prefWidth="172.0" text="Theme" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton id="JFXMenuButton" fx:id="accountButton" layoutX="1172.0" layoutY="-1.0" maxHeight="71.0" maxWidth="251.0" minHeight="71.0" minWidth="251.0" onAction="#openAccount" prefHeight="71.0" prefWidth="251.0" ripplerFill="WHITE" text="Account" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

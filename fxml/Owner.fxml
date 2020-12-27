@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="backPanel" fx:id="backGround" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearMouse" prefHeight="616.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.sipovsven.GetIt.controller.OwnerInformationController">
+   <children>
+      <Region id="Slider" prefHeight="71.0" prefWidth="621.0" />
+      <Text fill="#128fe2" layoutX="41.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <ImageView id="imgLogo" fx:id="imgLogo" fitHeight="113.0" fitWidth="113.0" layoutX="14.0" layoutY="-20.0">
+         <image>
+            <Image url="@../images/GetItLogo_Orange.png" />
+         </image>
+      </ImageView>
+      <JFXButton id="submitButton" fx:id="saveOwnerButton" buttonType="RAISED" layoutX="41.0" layoutY="538.0" onAction="#saveOwnerInformation" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="Save" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+      </JFXButton>
+      <Text fill="#128fe2" layoutX="41.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#128fe2" layoutX="218.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#128fe2" layoutX="44.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="companyNameTxtField" layoutX="39.0" layoutY="132.0" />
+      <TextField fx:id="ownerFirstNameTxtField" layoutX="39.0" layoutY="207.0" />
+      <TextField fx:id="ownerLastNameTxtField" layoutX="217.0" layoutY="207.0" />
+      <TextField fx:id="ownerEmailTxtField" layoutX="43.0" layoutY="278.0" />
+      <Text fill="#128fe2" layoutX="397.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#128fe2" layoutX="219.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#128fe2" layoutX="43.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank Code">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#128fe2" layoutX="396.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ownerUidTxtField" layoutX="395.0" layoutY="379.0" />
+      <TextField fx:id="ownerPhoneTxtField" layoutX="217.0" layoutY="278.0" />
+      <TextField fx:id="ownerBankCodeTxtField" layoutX="42.0" layoutY="379.0" />
+      <TextField fx:id="ownerBankNameTxtField" layoutX="395.0" layoutY="279.0" />
+      <Text fill="#128fe2" layoutX="225.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#128fe2" layoutX="44.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIC">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#128fe2" layoutX="226.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Book Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ownerAccountNumTxtField" layoutX="218.0" layoutY="379.0" />
+      <TextField fx:id="ownerBicTxtField" layoutX="41.0" layoutY="445.0" />
+      <TextField fx:id="ownerCompanyBookTxtField" layoutX="219.0" layoutY="446.0" />
+      <Text fill="#128fe2" layoutX="395.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ownerAddressTxtField" layoutX="393.0" layoutY="207.0" />
+   </children>
+</AnchorPane>

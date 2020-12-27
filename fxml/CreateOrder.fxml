@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="backPanel" fx:id="backGround" maxHeight="600.0" maxWidth="-Infinity" minHeight="513.0" minWidth="-Infinity" onMouseClicked="#clearMouse" prefHeight="593.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.sipovsven.GetIt.controller.CreateOrderController">
+   <children>
+      <Region id="Slider" layoutY="-1.0" prefHeight="71.0" prefWidth="1013.0" />
+      <JFXButton id="createButton" fx:id="createOrderButton" buttonType="RAISED" layoutX="778.0" layoutY="530.0" onAction="#createOrder" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="Create" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+      </JFXButton>
+      <JFXButton id="submitButton" fx:id="addProductButton" buttonType="RAISED" layoutX="445.0" layoutY="426.0" onAction="#addProduct" prefHeight="50.0" prefWidth="89.0" ripplerFill="#723a3a" text="Add" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+      </JFXButton>
+      <TextField fx:id="productSearchField" layoutX="40.0" layoutY="439.0" prefHeight="25.0" prefWidth="241.0" promptText="product" />
+      <TextField fx:id="quantityTxtField" layoutX="304.0" layoutY="439.0" prefHeight="25.0" prefWidth="62.0" promptText="Quantity" />
+      <TableView fx:id="productView" layoutX="40.0" layoutY="112.0" prefHeight="295.0" prefWidth="511.0">
+        <columns>
+          <TableColumn fx:id="nameView" prefWidth="138.0" text="name" />
+          <TableColumn fx:id="quantityView" prefWidth="134.0" text="quantity" />
+            <TableColumn fx:id="priceView" prefWidth="154.0" text="price/unit" />
+        </columns>
+      </TableView>
+      <Text id="textAboveInput" fill="#128fe2" layoutX="750.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text id="textAboveInput" fill="#128fe2" layoutX="750.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text id="textAboveInput" fill="#128fe2" layoutX="750.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text id="textAboveInput" fill="#128fe2" layoutX="750.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text id="textAboveInput" fill="#128fe2" layoutX="750.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="phone">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="customerNameTxtField" layoutX="748.0" layoutY="137.0" />
+      <TextField fx:id="customerLastNameTxtField" layoutX="748.0" layoutY="207.0" />
+      <TextField fx:id="customerAddressTxtField" layoutX="749.0" layoutY="277.0" />
+      <TextField fx:id="customerEmailTxtField" layoutX="749.0" layoutY="348.0" />
+      <TextField fx:id="customerPhoneTxtField" layoutX="749.0" layoutY="417.0" />
+      <TextField fx:id="choosePathTxtField" layoutX="460.0" layoutY="542.0" />
+      <JFXButton id="savePathButton" fx:id="choosePathButton" buttonType="RAISED" layoutX="617.0" layoutY="538.0" onAction="#choosePath" prefHeight="33.0" prefWidth="73.0" ripplerFill="#723a3a" text="Save Path" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <InnerShadow choke="0.18" color="#000000e0" height="38.79" offsetX="1.0" offsetY="1.0" radius="15.1875" width="23.96" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
